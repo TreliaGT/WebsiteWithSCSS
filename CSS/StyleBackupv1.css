@@ -1,0 +1,229 @@
+
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('../Fonts/blackjack_regular_macroman/blackjack-webfont.eot');
+	src: url('../Fonts/blackjack_regular_macroman/blackjack-webfont.eot?iefix') format('eot'),
+	     url('../Fonts/blackjack_regular_macroman/blackjack-webfont.woff') format('woff'),
+	     url('../Fonts/blackjack_regular_macroman/blackjack-webfont.ttf') format('truetype'),
+	     url('../Fonts/blackjack_regular_macroman/blackjack-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'MyWebFont2';
+	src: url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.eot');
+	src: url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.eot?iefix') format('eot'),
+	     url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.woff') format('woff'),
+	     url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.ttf') format('truetype'),
+	     url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.svg#webfont') format('svg');
+}
+
+body{
+	background-image: url(../Images/background.JPG); /* set background image*/ 
+	width: 100%;
+}
+
+.container{
+  max-width: 1550px;
+  margin: auto;
+	
+}
+
+Header{
+	background-color: #4682b4;
+	color: white;
+	padding:20px;
+	border-style: solid;
+	border-color: #fffaf0;
+}
+
+h1{
+	font-size: 300%;
+	font-family: 'MyWebFont', Arial, sans-serif; 
+}
+h2{
+	font-size: 170%;
+	font-family: 'MyWebFont2', Arial, sans-serif; 
+}
+
+h3{
+	font-family: 'MyWebFont2', Arial, sans-serif; 
+}
+
+
+p  li{
+   font-family: Georgia, serif;
+font-size: 14px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+nav {
+  overflow:hidden;
+}
+
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  float:left;
+  display:block;
+  color:white;
+  font-size: 150%;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration:none;
+  
+}
+
+
+/*changed link color to grey when mouse hovered link */
+nav a:hover {
+  background-color: #C1CDC1;
+  
+}
+
+.main {   
+  float: left;
+  width: 73%;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card{
+	background-color: #4682b4;
+	color:white;
+	padding:20px;
+	margin-top:20px;
+	border-style: solid;
+	border-color: #fffaf0;
+}
+.contactCard{
+	background-color: #4682b4;
+	color:white;
+	padding:20px;
+	margin-top:20px;
+	border-style: solid;
+	border-color: #fffaf0;
+	height: 400px;
+}
+
+.row:after{
+	content: "";
+	display:table;
+	clear:both;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  height:200px;
+  padding:1px;
+	
+	 -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog */
+@media screen and (max-width: 800px) {
+  .main, .sidebar {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+form{
+	padding:1px;
+	text-align: center;
+}
+
+input[type=text], select, textarea, input[type=email]{
+  width: 90%;
+  padding: 12px;
+  margin:2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+	
+}
+
+
+input[type=submit] {
+    background-color: #008080;
+  color: white;
+  padding: 12px 20px;
+	margin:2px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+	
+-moz-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+-webkit-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+-o-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+-ms-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+transform: translate(-49px, 0px) skew(-14deg, 0deg);
+}
+
+input[type=submit]:hover {
+  background-color: #C1CDC1;
+}
+
+.box {
+text-align: center;
+	padding:2px;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: black;}
+  to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: black;}
+  to {background-color: blue;}
+}
+
+table {
+ border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+	 border: 1px solid black;
+}
+th{
+	 background-color: white;
+  color: black;
+}
+
+
+footer{
+	background-color: #4682b4;
+	text-align: center;
+	color: white;
+	padding: 5px;
+	margin-top: 20px;
+	border-style: solid;
+	border-color: #fffaf0;
+}

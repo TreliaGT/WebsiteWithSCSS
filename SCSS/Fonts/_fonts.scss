@@ -1,0 +1,44 @@
+//All the imported fonts
+@font-face{
+  font-family: 'MyWebFont';
+  src: url('../Fonts/blackjack_regular_macroman/blackjack-webfont.eot');
+  src: url('../Fonts/blackjack_regular_macroman/blackjack-webfont.eot?iefix') format('eot'),
+  url('../Fonts/blackjack_regular_macroman/blackjack-webfont.woff') format('woff'),
+  url('../Fonts/blackjack_regular_macroman/blackjack-webfont.ttf') format('truetype'),
+  url('../Fonts/blackjack_regular_macroman/blackjack-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+  font-family: 'MyWebFont2';
+  src: url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.eot');
+  src: url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.eot?iefix') format('eot'),
+  url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.woff') format('woff'),
+  url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.ttf') format('truetype'),
+  url('../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.svg#webfont') format('svg');
+}
+
+//Variables
+$width: 100%; //Width 100%
+
+h1{
+  font: {
+    family: 'MyWebFont', Arial, sans-serif;
+  }
+}
+h2 h3{
+  font: {
+    family: 'MyWebFont2', Arial, sans-serif;
+  }
+}
+
+$fonts :(
+h1:$width + 200%,
+h2:$width  + 70%
+);
+@each $element, $size in $fonts {
+  #{$element} {
+    font-size: $size;
+  }
+}
+
+

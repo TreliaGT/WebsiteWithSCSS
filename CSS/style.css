@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("../Fonts/blackjack_regular_macroman/blackjack-webfont.eot");
+  src: url("../Fonts/blackjack_regular_macroman/blackjack-webfont.eot?iefix") format("eot"), url("../Fonts/blackjack_regular_macroman/blackjack-webfont.woff") format("woff"), url("../Fonts/blackjack_regular_macroman/blackjack-webfont.ttf") format("truetype"), url("../Fonts/blackjack_regular_macroman/blackjack-webfont.svg#webfont") format("svg"); }
+
+@font-face {
+  font-family: 'MyWebFont2';
+  src: url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.eot");
+  src: url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.eot?iefix") format("eot"), url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.woff") format("woff"), url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.ttf") format("truetype"), url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.svg#webfont") format("svg"); }
+
+h1 {
+  font-family: 'MyWebFont', Arial, sans-serif; }
+
+h2 h3 {
+  font-family: 'MyWebFont2', Arial, sans-serif; }
+
+h1 {
+  font-size: 300%; }
+
+h2 {
+  font-size: 170%; }
+
+@-webkit-keyframes bluebox {
+  from {
+    background-color: black; }
+  to {
+    background-color: blue; } }
+
+/* Standard syntax */
+@keyframes bluebox {
+  from {
+    background-color: black; }
+  to {
+    background-color: blue; } }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes redbox {
+  from {
+    background-color: black; }
+  to {
+    background-color: red; } }
+
+/* Standard syntax */
+@keyframes redbox {
+  from {
+    background-color: black; }
+  to {
+    background-color: red; } }
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  height: 200px;
+  padding: 1px;
+  -webkit-animation-name: bluebox;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: bluebox;
+  animation-duration: 10s; }
+
+.box {
+  text-align: center;
+  padding: 2px;
+  width: 100%;
+  -webkit-animation-name: redbox;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: redbox;
+  animation-duration: 5s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.bar, .card, .contactCard {
+  background-color: #4682b4;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #fffaf0; }
+
+body {
+  background-image: url(../Images/background.JPG);
+  /* set background image*/
+  width: 100%; }
+
+.container {
+  max-width: 1550px;
+  margin: auto; }
+
+Header {
+  background-color: #4682b4;
+  color: white;
+  padding: 20px;
+  border-style: solid;
+  border-color: #fffaf0; }
+
+p li {
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none; }
+
+nav {
+  overflow: hidden; }
+  nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 170%;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px; }
+  nav a:hover {
+    background-color: #C1CDC1; }
+
+.main {
+  float: left;
+  width: 73%; }
+
+.bar {
+  float: left;
+  width: 97%; }
+
+.sidebar {
+  float: left;
+  width: 25%;
+  padding-left: 20px; }
+
+.contactCard {
+  height: 400px; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+form {
+  padding: 1px;
+  text-align: center; }
+  form input[type=text], form select, form textarea, form input[type=email] {
+    width: 90%;
+    padding: 12px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; }
+  form input[type=submit] {
+    background-color: #008080;
+    color: white;
+    padding: 12px 20px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    -moz-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+    -webkit-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+    -o-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+    -ms-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+    transform: translate(-49px, 0px) skew(-14deg, 0deg); }
+    form input[type=submit]:hover {
+      background-color: #C1CDC1; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left; }
+  table th {
+    background-color: black;
+    color: white;
+    padding: 10px; }
+  table td {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px; }
+    table td:hover {
+      background-color: #C1CDC1; }
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #4682b4;
+  color: white;
+  padding: 20px;
+  border-style: solid;
+  border-color: #fffaf0; }
+
+/* Scss Document */

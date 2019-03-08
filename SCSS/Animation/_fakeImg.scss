@@ -1,0 +1,67 @@
+//Contents the animation for the fake images and box
+//Variables
+$width: 100%; //Width 100%
+
+//@mixin
+@mixin animation($time){
+  //If statement depending on $time
+  @if $time == 10s{
+    -webkit-animation-name: bluebox; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: $time; /* Safari 4.0 - 8.0 */
+    animation-name: bluebox;
+    animation-duration: $time;
+
+
+  } @else{
+    -webkit-animation-name: redbox; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: $time; /* Safari 4.0 - 8.0 */
+    animation-name: redbox;
+    animation-duration: $time;
+  }
+}
+
+
+
+//animation
+@-webkit-keyframes bluebox {
+  from {background-color: black;}
+  to {background-color: blue;}
+}
+
+/* Standard syntax */
+@keyframes bluebox {
+  from {background-color: black;}
+  to {background-color: blue;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes redbox {
+  from {background-color: black;}
+  to {background-color: red;}
+}
+
+/* Standard syntax */
+@keyframes redbox {
+  from {background-color: black;}
+  to {background-color: red;}
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: $width;
+  height:200px;
+  padding:1px;
+
+  @include animation(10s);
+}
+
+.box {
+  text-align: center;
+  padding:2px;
+  width: $width;
+  @include animation(5s);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}

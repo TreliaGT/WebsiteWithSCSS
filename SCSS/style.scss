@@ -1,0 +1,178 @@
+//Default SCSS
+//Imports
+@import "Fonts/_fonts.scss"; // variable. just imports the fonts, displays @each
+@import "Animation/_fakeImg.scss"; //Contents if statement, mixin,
+
+//Variables
+$width: 100%; //Width 100%
+$blue : #4682b4;
+
+
+//%extended
+ %AllCard {
+	background-color: $blue;
+	color: white;
+	padding: 20px;
+	margin-top: 20px;
+	border: {
+		style: solid;
+		color: #fffaf0;
+	}
+}
+
+//mixin
+@mixin footerHeader{
+	background:{color: $blue;}
+	color: white;
+	padding:20px;
+	border:{
+		style: solid;
+		color: #fffaf0;
+	}
+}
+
+body{
+	background-image: url(../Images/background.JPG); /* set background image*/ 
+	width: $width;
+}
+
+.container{
+  max-width: 1550px;
+  margin: auto;	
+}
+
+ Header{
+	 @include footerHeader;
+}
+
+ p  li{
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+	 font: {
+		weight: normal;
+		 family: Georgia, serif;
+		 size: 14px;
+		 style: normal;
+		 variant: normal;
+	 }
+	 text: {
+		 transform: none;
+		 decoration: none;
+	 }
+}
+
+nav {
+  overflow:hidden;
+	a {
+		font:{family: Arial, Helvetica, sans-serif;
+			size: $width + 70%;}
+ 		 float:left;
+ 		 display:block;
+  		color:white;
+		text:{ align:center;
+			decoration:none;}
+		padding: 14px 16px;
+}
+	 a:hover {
+  background-color: #C1CDC1;
+  }
+}
+
+.main {   
+  float: left;
+  width: 73%;
+}
+
+.bar{
+	float: left;
+	width: $width - 3%;
+	@extend %AllCard;
+
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card{
+	@extend %AllCard;
+}
+
+.contactCard{
+	@extend %AllCard;
+	height: 400px;
+}
+
+.row:after{
+	content: "";
+	display:table;
+	clear:both;
+}
+
+
+form{
+	padding:1px;
+	text-align: center;
+
+input[type=text], select, textarea, input[type=email]{
+  width: 90%;
+  padding: 12px;
+  margin:2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+	
+}
+
+input[type=submit] {
+    background-color: #008080;
+  color: white;
+  padding: 12px 20px;
+	margin:2px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+	
+-moz-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+-webkit-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+-o-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+-ms-transform: translate(-49px, 0px) skew(-14deg, 0deg);
+transform: translate(-49px, 0px) skew(-14deg, 0deg);
+	&:hover {
+  background-color: #C1CDC1;
+}
+}
+}
+
+
+table {
+ border-collapse: collapse;
+  width: $width;
+	text-align: left;
+	th{
+		background-color: black;
+		color:white;
+		 padding: 10px;
+	}
+td {
+	background-color: white;
+ 	 color: black;
+	 border: 1px solid black;
+	 padding: 10px;
+	&:hover {
+		background-color: #C1CDC1;
+	}
+	}
+
+}
+
+footer{
+	text-align: center;
+	margin-top: 20px;
+	@include footerHeader;
+}
+/* Scss Document */
+

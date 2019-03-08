@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("../Fonts/blackjack_regular_macroman/blackjack-webfont.eot");
+  src: url("../Fonts/blackjack_regular_macroman/blackjack-webfont.eot?iefix") format("eot"), url("../Fonts/blackjack_regular_macroman/blackjack-webfont.woff") format("woff"), url("../Fonts/blackjack_regular_macroman/blackjack-webfont.ttf") format("truetype"), url("../Fonts/blackjack_regular_macroman/blackjack-webfont.svg#webfont") format("svg"); }
+
+@font-face {
+  font-family: 'MyWebFont2';
+  src: url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.eot");
+  src: url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.eot?iefix") format("eot"), url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.woff") format("woff"), url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.ttf") format("truetype"), url("../Fonts/calligraffiti_regular_macroman/calligraffiti-webfont.svg#webfont") format("svg"); }
+
+h1 {
+  font-family: 'MyWebFont', Arial, sans-serif; }
+
+h2 h3 {
+  font-family: 'MyWebFont2', Arial, sans-serif; }
+
+h1 {
+  font-size: 300%; }
+
+h2 {
+  font-size: 170%; }
